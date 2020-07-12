@@ -29,8 +29,13 @@ const toDoForm = document.querySelector(".js-toDoForm"),
     delBtn.innerText = 'X';
     delBtn.addEventListener('click', deleteToDO);
     span.innerText = text;
+    delBtn.style.border = '0px'
+    delBtn.style.backgroundColor = 'transparent'
+    delBtn.style.color = 'red'
+    delBtn.style.marginLeft = '15px'
     li.appendChild(span);
     li.appendChild(delBtn);
+    li.style.listStyleType = 'none'
     li.id = newId;
     toDoList.prepend(li);
     const toDoObj = {

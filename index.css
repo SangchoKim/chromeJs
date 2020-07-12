@@ -1,26 +1,69 @@
 body {
   background-color: #ecf0f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
 }
 
-.btn {
+body .btn {
   cursor: pointer;
 }
 
-h1 {
+body h1 {
   color: #34495e;
   -webkit-transition: color 0.5s ease-in-out;
   transition: color 0.5s ease-in-out;
 }
 
-.clicked {
+body .clicked {
   color: #7f8c8d;
 }
 
-.form, .greetings {
+body .form, body .greetings {
   display: none;
 }
 
-.showing {
+body .showing {
   display: block;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -webkit-animation: fadeIn 0.5s linear;
+          animation: fadeIn 0.5s linear;
 }
 /*# sourceMappingURL=index.css.map */

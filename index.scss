@@ -2,25 +2,48 @@
 
 body {
     background-color:$body_bg_color;
-  }
-  
-  .btn {
-    cursor: pointer;
-  }
-  
-  h1 {
-    color: $h1_text_color;
-    transition: color 0.5s ease-in-out;
-  }
-  
-  .clicked {
-    color:$btn_click_color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+      .btn {
+        cursor: pointer;
+      }
+      
+      h1 {
+        color: $h1_text_color;
+        transition: color 0.5s ease-in-out;
+      }
+      
+      .clicked {
+        color:$btn_click_color;
+      }
+    
+    .form , .greetings {
+      display: none;
+    }
+    
+    .showing {
+      display: block;
+    }
   }
 
-.form , .greetings {
-  display: none;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.showing {
-  display: block;
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
 }
