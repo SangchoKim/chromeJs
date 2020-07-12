@@ -1,0 +1,18 @@
+@import '_variables';
+
+body {
+    background-color:$body_bg_color;
+  }
+  
+  .btn {
+    cursor: pointer;
+  }
+  
+  h1 {
+    color: $h1_text_color;
+    transition: color 0.5s ease-in-out;
+  }
+  
+  .clicked {
+    color:$btn_click_color;
+  }
