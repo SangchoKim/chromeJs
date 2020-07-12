@@ -16,3 +16,11 @@ body {
   .clicked {
     color:$btn_click_color;
   }
+
+.form , .greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
